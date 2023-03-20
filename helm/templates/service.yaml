@@ -9,9 +9,9 @@ metadata:
   labels:
     chart: "{{ .Chart.Name }}-{{ .Chart.Version | replace "+" "_" }}"
 spec:
-  type: ClusterIP
+  type: LoadBalancer # Change here ...
   ports:
-  - port: 80
+  - port: 3180 # Change here ...
     targetPort: 80
     protocol: TCP
     name: http

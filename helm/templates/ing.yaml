@@ -20,7 +20,7 @@ spec:
           service:
            name: {{ template "fullname" . }}
            port:
-             number: 3180 # Change here ...
+             number: 80
     host: {{ .Values.ingress.host }}
 {{- end}}
 

@@ -11,6 +11,7 @@ metadata:
   annotations:
     ingress.kubernetes.io/ssl-redirect: "false"
 spec:
+  ingressClassName: nginx
   rules:
   - http:
       paths:

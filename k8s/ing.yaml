@@ -9,6 +9,7 @@ metadata:
   annotations:
     ingress.kubernetes.io/ssl-redirect: "false"
 spec:
+  ingressClassName: nginx
   rules:
   - http:
       paths:
@@ -19,4 +20,4 @@ spec:
            name: devops-toolkit
            port:
              number: 80
-    host: devopstoolkitseries.com
+    host: devops-toolkit-series.com
